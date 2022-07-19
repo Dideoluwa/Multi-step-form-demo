@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(89, 125, 217);
     color: white;
     display: flex;
     flex-direction: column;
@@ -23,19 +23,35 @@ body {
     align-items: center;
 }
 
+.headings div p{
+    color: rgb(0, 255, 140);
+}
+
 .line {
     height: 2px;
-    width: 70px;
-    background-color: white;
+    width: 80px;
+    transition: all 0.7s ease-in-out;
+    background-color: rgb(0, 255, 140);
 }
 
 .number {
-    height: 20px;
-    width: 20px;
-    background-color: red;
+    height: 6px;
+    width: 6px;
+    transform: scale(0.9);
+    transition: all 0.4s ease-in-out;
+    background-color: rgb(0, 255, 140);
     border-radius: 50%;
     padding: 30px;
     color: black;
+    font-size: 20px;
+}
+.headings{
+    margin-top: 20px;
+    width: 30%;
+    justify-content: space-evenly;
+    display: flex;
+}
+.headings div p{
     font-size: 20px;
 }
 
@@ -43,8 +59,8 @@ fieldset {
     display: none;
     background: white;
     border: 0 none;
-    border-radius: 3px;
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    box-shadow: 20px 20px 50px rgb(46, 46, 46);
     padding: 20px 30px;
     box-sizing: border-box;
     width: 80%;
@@ -65,20 +81,30 @@ textarea {
     font-size: 13px;
 
 }
-
-.action-button {
-    width: 100%;
-    background: #1091c1;
-    font-weight: bold;
-    color: black;
-    transition: 150ms;
-    border: 0 none;
-    border-radius: 1px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 5px;
+input:focus,
+textarea:focus{
+    outline: none;
+    border-color: rgb(121, 229, 233);
 }
 
+.action-button {
+    width: 100px;
+    background: #1091c1;
+    font-weight: bold;
+    color: white;
+    transition: 150ms;
+    border: 0 none;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: auto;
+}
+.btns{
+    display: flex;
+}
+.btns-child{
+    margin: auto;
+}
 .fs-title {
     font-size: 15px;
     text-transform: uppercase;
@@ -95,10 +121,56 @@ textarea {
 .active-form{
     display: block;
 }
+.animate-right{
+    animation: fadeInRight 1s;
+}
+.animate-left{
+    animation: fadeInLeft 1s;
+}
 .active .number {
-    background-color: greenyellow;
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+    background-color: rgb(92, 242, 244);
+}
+
+.active p {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+    color: rgb(92, 242, 244);
 }
 
 .active .line {
-    background-color: greenyellow;
+    transition: all 0.7s ease-in-out;
+    background-color: rgb(92, 242, 244);
+}
+
+.forms{
+    margin-top: 50px;
+}
+
+@keyframes fadeInRight{
+    0%{
+        transform: translateX(-15%);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(15%);
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes fadeInLeft{
+    0%{
+        transform: translateX(15%);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-15%);
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }

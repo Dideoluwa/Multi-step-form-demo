@@ -17,12 +17,23 @@
         <div class="component">
             <div class="line"></div>
             <div class="number">2</div>
-            <div class="line"></div>
         </div>
         <div class="component">
+            <div class="line"></div>
             <div class="number">3</div>
         </div>
     </section>
+    <!-- <section class="headings">
+        <div class="active">
+            <p>Create account</p>
+        </div>
+        <div>
+            <p>Personal details</p>
+        </div>
+        <div>
+            <p>Social accounts</p>
+        </div>
+    </section> -->
     <section class="forms">
         <form>
             <fieldset class="form active-form">
@@ -31,7 +42,13 @@
                 <input type="text" name="email" placeholder="Email" />
                 <input type="password" name="pass" placeholder="Password" />
                 <input type="password" name="cpass" placeholder="Confirm Password" />
-                <input type="button" name="next" class="next action-button" value="Next" />
+                <div class="btns">
+                    <div class="btns-child">
+                        <input type="button" name="next" class="next action-button" value="Next" />
+                    </div>
+
+                </div>
+
             </fieldset>
 
 
@@ -41,9 +58,13 @@
                 <input type="text" name="lname" placeholder="Last Name" />
                 <input type="text" name="phone" placeholder="Phone" />
                 <textarea name="address" placeholder="Address"></textarea>
-                <input type="button" name="previous" class="prev action-button" value="Previous" />
+                <div class="btns">
+                    <div class="btns-child">
+                        <input type="button" name="previous" class="prev action-button" value="Previous" />
+                        <input type="button" name="next" class="next action-button" value="Next" />
+                    </div>
+                </div>
 
-                <input type="button" name="next" class="next action-button" value="Next" />
             </fieldset>
 
             <fieldset class="form">
@@ -51,8 +72,12 @@
                 <input type="text" name="twitter" placeholder="Twitter" />
                 <input type="text" name="facebook" placeholder="Facebook" />
                 <input type="text" name="gplus" placeholder="Google Plus" />
-                <input type="button" name="previous" class="prev action-button" value="Previous" />
-                <input type="submit" name="submit" class="submit action-button" value="Submit" />
+                <div class="btns">
+                    <div class="btns-child">
+                        <input type="button" name="previous" class="prev action-button" value="Previous" />
+                        <input type="submit" name="next" class="action-button" value="Submit" />
+                    </div>
+                </div>
             </fieldset>
         </form>
     </section>

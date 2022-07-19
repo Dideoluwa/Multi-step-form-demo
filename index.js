@@ -18,17 +18,20 @@ for (let nex of next) {
         }
         component[count].classList.add('active')
         forms[count].classList.add('active-form')
+        forms[count].classList.add('animate-right')
     })
 }
 
 for (let pre of prev) {
     pre.addEventListener('click', () => {
         component[count].classList.remove('active')
+        forms[count].classList.remove('animate-left')
         forms[count].classList.remove('active-form')
         if (count > 0) {
             count--
         }
         component[count].classList.add('active')
         forms[count].classList.add('active-form')
+        forms[count].classList.add('animate-left')
     })
 }
