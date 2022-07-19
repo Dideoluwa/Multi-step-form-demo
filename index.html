@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="imdex.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-task-form</title>
+</head>
+
+<body>
+    <section class="body">
+        <div class="component active">
+            <div class="number">1</div>
+        </div>
+        <div class="component">
+            <div class="line"></div>
+            <div class="number">2</div>
+            <div class="line"></div>
+        </div>
+        <div class="component">
+            <div class="number">3</div>
+        </div>
+    </section>
+    <section class="forms">
+        <form>
+            <fieldset class="form active-form">
+                <h2 class="fs-title">Create your account</h2>
+                <h3 class="fs-subtitle"></h3>
+                <input type="text" name="email" placeholder="Email" />
+                <input type="password" name="pass" placeholder="Password" />
+                <input type="password" name="cpass" placeholder="Confirm Password" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+
+
+            <fieldset class="form">
+                <h2 class="fs-title">Personal Details</h2>
+                <input type="text" name="fname" placeholder="First Name" />
+                <input type="text" name="lname" placeholder="Last Name" />
+                <input type="text" name="phone" placeholder="Phone" />
+                <textarea name="address" placeholder="Address"></textarea>
+                <input type="button" name="previous" class="prev action-button" value="Previous" />
+
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+
+            <fieldset class="form">
+                <h2 class="fs-title">Socials</h2>
+                <input type="text" name="twitter" placeholder="Twitter" />
+                <input type="text" name="facebook" placeholder="Facebook" />
+                <input type="text" name="gplus" placeholder="Google Plus" />
+                <input type="button" name="previous" class="prev action-button" value="Previous" />
+                <input type="submit" name="submit" class="submit action-button" value="Submit" />
+            </fieldset>
+        </form>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
