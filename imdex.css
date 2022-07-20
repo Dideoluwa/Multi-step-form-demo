@@ -153,7 +153,7 @@ textarea:focus{
 
 @keyframes fadeInRight{
     0%{
-        transform: translateX(-15%);
+        transform: translateX(-15%) scale(1.04);
         opacity: 0;
     }
     50%{
@@ -166,7 +166,7 @@ textarea:focus{
 }
 @keyframes fadeInLeft{
     0%{
-        transform: translateX(15%);
+        transform: translateX(15%) scale(0.94);
         opacity: 0;
     }
     50%{
